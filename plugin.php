@@ -69,18 +69,18 @@ if ( ! \class_exists( 'J7\Woocommerce_Pdf_Invoices_Packing_Slips_Extend_TC\Plugi
 		 * @var array
 		 */
 		public $required_plugins = array(
-			// array(
-			// 'name'     => 'WooCommerce',
-			// 'slug'     => 'woocommerce',
-			// 'required' => true,
-			// 'version'  => '7.6.0',
-			// ),
-			// array(
-			// 'name'     => 'WP Toolkit',
-			// 'slug'     => 'wp-toolkit',
-			// 'source'   => 'https://github.com/j7-dev/wp-toolkit/releases/latest/download/wp-toolkit.zip',
-			// 'required' => true,
-			// ),
+			array(
+				'name'     => 'WooCommerce',
+				'slug'     => 'woocommerce',
+				'required' => true,
+				'version'  => '8.0.0',
+			),
+			array(
+				'name'     => 'PDF Invoices & Packing Slips for WooCommerce',
+				'slug'     => 'woocommerce-pdf-invoices-packing-slips',
+				'required' => true,
+				'version'  => '3.8.0',
+			),
 		);
 
 		/**
