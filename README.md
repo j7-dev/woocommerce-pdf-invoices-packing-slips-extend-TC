@@ -5,6 +5,8 @@
 
 <br><br><br>
 
+## 📦 [下載外掛](https://github.com/j7-dev/woocommerce-pdf-invoices-packing-slips-extend-TC/releases/latest/download/woocommerce-pdf-invoices-packing-slips-extend-TC.zip)
+
 ## ⚡ 主要功能
 
 #### 使用此外掛前，你用 PDF Invoices & Packing Slips for WooCommerce 產出來的 PDF 會長這樣
