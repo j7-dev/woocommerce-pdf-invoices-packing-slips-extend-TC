@@ -1,10 +1,38 @@
 {
-  "require": {
-    "yahnis-elsts/plugin-update-checker": "^5.3"
-  },
-  "autoload": {
-    "psr-4": {
-      "J7\\MyPlugin\\": "utils/"
+  "name": "j7-dev/wp-plugin",
+  "description": "This is a boilerplate for creating a WordPress plugin with vite",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-only",
+  "authors": [
+    {
+      "name": "JerryLiu",
+      "email": "j7.dev.gg@gmail.com",
+      "homepage": "https://github.com/j7-dev",
+      "role": "Developer"
     }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "require": {
+    "yahnis-elsts/plugin-update-checker": "^5.3",
+    "j7-dev/tgm-plugin-activation-forked": "^1.0",
+    "micropackage/singleton": "^1.1"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "@stable",
+    "wp-coding-standards/wpcs": "@stable",
+    "dealerdirect/phpcodesniffer-composer-installer": "@stable"
+  },
+  "scripts": {
+    "lint": "phpcs"
   }
 }

@@ -1,52 +1,29 @@
-# My Plugin | 我的 WordPress 外掛
-一句話講完 My Plugin :
+# PDF Invoices & Packing Slips for WooCommerce extend TC | 繁體中文擴展外掛
+一句話講完 PDF Invoices & Packing Slips for WooCommerce extend TC :
 
-> 這是一個 WordPress 外掛的範本，可以用來開發新的外掛。
+> 這是一個基於 woocommerce-pdf-invoices-packing-slips 繁中擴展外掛，解決了 woocommerce-pdf-invoices-packing-slips 的 invoice PDF 無法正確顯示繁體中文的問題。
 
 <br><br><br>
 
 ## ⚡ 主要功能
 
-#### 1. 整合 TGM Plugin
+#### 使用此外掛前，你用 PDF Invoices & Packing Slips for WooCommerce 產出來的 PDF 會長這樣
 
-功能: 方便你依賴其他外掛，詳情可以參考[說明](http://tgmpluginactivation.com/configuration/)
+![image](https://github.com/j7-dev/woocommerce-pdf-invoices-packing-slips-extend-TC/assets/9213776/695094fc-f50d-4a84-bf62-5aadd193dd94)
 
-<br><br><br>
-
-#### 2. 整合 plugin-update-checker
-
-功能: 當你在 github release 時，可以自動通知使用者更新，詳情可以參考[說明](https://github.com/YahnisElsts/plugin-update-checker)
 
 <br><br><br>
 
-## 用法
+#### 使用此外掛後，你用 PDF Invoices & Packing Slips for WooCommerce 產出來的 PDF 會長這樣
 
-#### 請先執行 composer install 安裝依賴
+![image](https://github.com/j7-dev/woocommerce-pdf-invoices-packing-slips-extend-TC/assets/9213776/6ac6055f-5c92-4fe5-b14a-4b28e153630a)
 
-<br><br><br>
 
-#### 如果你依賴多個 plugins ，需要在 `check_required_plugins` 判斷是否都已經啟用
-
-```php
-public function check_required_plugins()
-{
-	self::$is_all_plugins_activated = \class_exists(self::WOOCOMMERCE_CLASS);
-
-	if (self::$is_all_plugins_activated) {
-		new Bootstrap();
-	}
-}
-```
 
 <br><br><br>
 
-#### 在 Utils 定義常數
+## ❓ Q & A
 
-```php
-const APP_NAME            = 'My Plugin';
-const KEBAB               = 'my-plugin';
-const SNAKE               = 'my_plugin';
-const GITHUB_REPO         = 'https://github.com/j7-dev/wp-plugin';
-```
+目前僅使用了 Google `Noto Sans TC` 字體 regular，並沒有導入所有不同的粗細大小。
 
-<br><br><br>
+目前也僅針對 invoice 調整，其他 PDF 頁面沒有特別處理，如果有 PDF 無法正常顯示繁體中文請發 [github issue](https://github.com/j7-dev/woocommerce-pdf-invoices-packing-slips-extend-TC/issues)。
