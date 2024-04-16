@@ -11,14 +11,14 @@
 
 #### 使用此外掛前，你用 PDF Invoices & Packing Slips for WooCommerce 產出來的 PDF 會長這樣
 
-![image](https://github.com/j7-dev/woocommerce-pdf-invoices-packing-slips-extend-TC/assets/9213776/695094fc-f50d-4a84-bf62-5aadd193dd94)
+![image](https://github.com/j7-dev/woocommerce-pdf-invoices-packing-slips-extend-TC/assets/9213776/76b098a5-5813-4e77-9b24-13b338858d3e)
 
 
 <br><br><br>
 
 #### 使用此外掛後，你用 PDF Invoices & Packing Slips for WooCommerce 產出來的 PDF 會長這樣
 
-![image](https://github.com/j7-dev/woocommerce-pdf-invoices-packing-slips-extend-TC/assets/9213776/6ac6055f-5c92-4fe5-b14a-4b28e153630a)
+![image](https://github.com/j7-dev/woocommerce-pdf-invoices-packing-slips-extend-TC/assets/9213776/d38d38af-2cf2-4597-b9ca-2b5a58628787)
 
 
 
