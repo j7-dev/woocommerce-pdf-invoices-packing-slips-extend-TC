@@ -26,6 +26,8 @@
 
 ## ❓ Q & A
 
-目前僅使用了 Google `Noto Sans TC` 字體 regular，並沒有導入所有不同的粗細大小。
+1. 目前僅使用了 Google `Noto Sans TC` 字體 regular，並沒有導入所有不同的粗細大小。
 
-目前也僅針對 invoice 調整，其他 PDF 頁面沒有特別處理，如果有 PDF 無法正常顯示繁體中文請發 [github issue](https://github.com/j7-dev/woocommerce-pdf-invoices-packing-slips-extend-TC/issues)。
+2. 目前也僅針對 invoice 調整，其他 PDF 頁面沒有特別處理，如果有 PDF 無法正常顯示繁體中文請發 [github issue](https://github.com/j7-dev/woocommerce-pdf-invoices-packing-slips-extend-TC/issues)。
+
+3. 看得懂 code 的人，也可以直接寫 hook 擴展就好，可以不用額外安裝此外掛，就可以節省此外掛的額外開銷(更新檢查 & 外掛依賴檢查)
