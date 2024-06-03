@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83bc3ab6e3ef8a759d135688f0e0e74e",
+    "content-hash": "5d1c8c9f867b7adbb53f70772a913527",
     "packages": [
         {
             "name": "j7-dev/tgm-plugin-activation-forked",
-            "version": "1.0.0",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/j7-dev/tgm-plugin-activation-forked.git",
-                "reference": "d6724f0a610da6f7d3aefd8971f516041d63bb77"
+                "reference": "42433f3d49088a8435f46806ae001bbc0bf96156"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/j7-dev/tgm-plugin-activation-forked/zipball/d6724f0a610da6f7d3aefd8971f516041d63bb77",
-                "reference": "d6724f0a610da6f7d3aefd8971f516041d63bb77",
+                "url": "https://api.github.com/repos/j7-dev/tgm-plugin-activation-forked/zipball/42433f3d49088a8435f46806ae001bbc0bf96156",
+                "reference": "42433f3d49088a8435f46806ae001bbc0bf96156",
                 "shasum": ""
             },
             "require": {
@@ -26,7 +26,7 @@
             "type": "library",
             "autoload": {
                 "files": [
-                    "class-tgm-plugin-activation.php"
+                    "index.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -54,34 +54,36 @@
                 "issues": "https://github.com/j7-dev/tgm-plugin-activation-forked/issues",
                 "source": "https://github.com/j7-dev/tgm-plugin-activation-forked"
             },
-            "time": "2024-04-02T09:57:40+00:00"
+            "time": "2024-05-21T17:57:04+00:00"
         },
         {
-            "name": "micropackage/singleton",
-            "version": "1.1.1",
+            "name": "j7-dev/wp-utils",
+            "version": "0.0.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/micropackage/singleton.git",
-                "reference": "594b5a857ee42149e6b01e8a353e5aaee52e726d"
+                "url": "https://github.com/j7-dev/wp-utils.git",
+                "reference": "298638a3c295469b490fda1ecdb3ad61acc5855b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/micropackage/singleton/zipball/594b5a857ee42149e6b01e8a353e5aaee52e726d",
-                "reference": "594b5a857ee42149e6b01e8a353e5aaee52e726d",
+                "url": "https://api.github.com/repos/j7-dev/wp-utils/zipball/298638a3c295469b490fda1ecdb3ad61acc5855b",
+                "reference": "298638a3c295469b490fda1ecdb3ad61acc5855b",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6"
+                "j7-dev/tgm-plugin-activation-forked": "1.2.2",
+                "yahnis-elsts/plugin-update-checker": "5.3"
             },
             "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
-                "phpcompatibility/php-compatibility": "^9.1",
-                "wp-coding-standards/wpcs": "^2.0"
+                "dealerdirect/phpcodesniffer-composer-installer": "@stable",
+                "squizlabs/php_codesniffer": "@stable",
+                "wp-coding-standards/wpcs": "@stable"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Micropackage\\Singleton\\": "src"
+                    "J7\\WpUtils\\Traits\\": "src/traits/",
+                    "J7\\WpUtils\\Classes\\": "src/classes/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -90,29 +92,38 @@
             ],
             "authors": [
                 {
-                    "name": "Jakub Mikita",
-                    "email": "jakub@bracketspace.com"
+                    "name": "JerryLiu",
+                    "email": "j7.dev.gg@gmail.com",
+                    "homepage": "https://github.com/j7-dev",
+                    "role": "Developer"
                 }
             ],
-            "description": "Singleton implementation",
+            "description": "Various WordPress classes and traits for WordPress",
+            "homepage": "https://github.com/j7-dev",
+            "keywords": [
+                "classes",
+                "traits",
+                "utils",
+                "wordpress"
+            ],
             "support": {
-                "issues": "https://github.com/micropackage/singleton/issues",
-                "source": "https://github.com/micropackage/singleton/tree/1.1.1"
+                "issues": "https://github.com/j7-dev/wp-utils/issues",
+                "source": "https://github.com/j7-dev/wp-utils/tree/0.0.8"
             },
-            "time": "2022-01-25T19:59:48+00:00"
+            "time": "2024-05-25T17:33:28+00:00"
         },
         {
             "name": "yahnis-elsts/plugin-update-checker",
-            "version": "v5.4",
+            "version": "v5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/YahnisElsts/plugin-update-checker.git",
-                "reference": "e8e53e6d98e37fa7c895c93417f52e3775494715"
+                "reference": "0b6bd7cd3286688ab680201aa6a7d8572c51ae1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/YahnisElsts/plugin-update-checker/zipball/e8e53e6d98e37fa7c895c93417f52e3775494715",
-                "reference": "e8e53e6d98e37fa7c895c93417f52e3775494715",
+                "url": "https://api.github.com/repos/YahnisElsts/plugin-update-checker/zipball/0b6bd7cd3286688ab680201aa6a7d8572c51ae1f",
+                "reference": "0b6bd7cd3286688ab680201aa6a7d8572c51ae1f",
                 "shasum": ""
             },
             "require": {
@@ -122,7 +133,7 @@
             "type": "library",
             "autoload": {
                 "files": [
-                    "load-v5p4.php"
+                    "load-v5p3.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -147,9 +158,9 @@
             ],
             "support": {
                 "issues": "https://github.com/YahnisElsts/plugin-update-checker/issues",
-                "source": "https://github.com/YahnisElsts/plugin-update-checker/tree/v5.4"
+                "source": "https://github.com/YahnisElsts/plugin-update-checker/tree/v5.3"
             },
-            "time": "2024-02-24T09:56:49+00:00"
+            "time": "2023-11-09T08:34:00+00:00"
         }
     ],
     "packages-dev": [
@@ -555,5 +566,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.6.0"
 }

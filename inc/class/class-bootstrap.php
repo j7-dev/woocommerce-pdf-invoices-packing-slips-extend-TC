@@ -7,12 +7,11 @@ declare (strict_types = 1);
 
 namespace J7\Woocommerce_Pdf_Invoices_Packing_Slips_Extend_TC;
 
-use Micropackage\Singleton\Singleton;
-
 /**
  * Class Bootstrap
  */
-final class Bootstrap extends Singleton {
+final class Bootstrap {
+	use \J7\WpUtils\Traits\SingletonTrait;
 
 
 	/**
@@ -52,5 +51,3 @@ body{
 		<?php
 	}
 }
-
-Bootstrap::get();
