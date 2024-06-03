@@ -3,7 +3,7 @@
  * Plugin Name:       PDF Invoices & Packing Slips for WooCommerce extend TC | 繁體中文擴展外掛
  * Plugin URI:        https://github.com/j7-dev/woocommerce-pdf-invoices-packing-slips-extend-TC
  * Description:       這是一個基於 woocommerce-pdf-invoices-packing-slips 繁中擴展外掛，解決了 woocommerce-pdf-invoices-packing-slips 的 invoice PDF 無法正確顯示繁體中文的問題。
- * Version:           0.0.3
+ * Version:           0.0.4
  * Requires at least: 5.7
  * Requires PHP:      8.0
  * Author:            J7
