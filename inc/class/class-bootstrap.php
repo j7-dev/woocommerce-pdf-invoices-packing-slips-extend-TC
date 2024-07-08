@@ -31,18 +31,71 @@ final class Bootstrap {
 	 */
 	public function add_chinese_font_support_to_css( $type, $invoice ): void {
 
-		$font_url = Plugin::$url . '/assets/fonts/NotoSansTC-Regular.ttf';
-
 		?>
-/* Load font */
+/* Load fonts */
 @font-face {
-	font-family: "Noto Sans TC";
-	font-style: normal;
-	font-weight: normal;
-	src: local("Noto Sans TC"), local("Noto Sans TC"),
-	url("<?php echo $font_url;// phpcs:ignore ?>")
-		format("truetype");
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 100;
+  src: url("<?php echo Plugin::$url; ?>/assets/fonts/NotoSansTC-Thin.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 200;
+  src: url("<?php echo Plugin::$url; ?>/assets/fonts/NotoSansTC-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 300;
+  src: url("<?php echo Plugin::$url; ?>/assets/fonts/NotoSansTC-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 400;
+  src: url("<?php echo Plugin::$url; ?>/assets/fonts/NotoSansTC-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 500;
+  src: url("<?php echo Plugin::$url; ?>/assets/fonts/NotoSansTC-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 600;
+  src: url("<?php echo Plugin::$url; ?>/assets/fonts/NotoSansTC-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 700;
+  src: url("<?php echo Plugin::$url; ?>/assets/fonts/NotoSansTC-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 800;
+  src: url("<?php echo Plugin::$url; ?>/assets/fonts/NotoSansTC-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 900;
+  src: url("<?php echo Plugin::$url; ?>/assets/fonts/NotoSansTC-Black.ttf") format("truetype");
+}
+
 
 body{
 	font-family: "Noto Sans TC", "Open Sans", sans-serif !important;
